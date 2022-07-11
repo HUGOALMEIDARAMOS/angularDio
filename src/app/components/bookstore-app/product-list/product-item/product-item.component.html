@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="book.img" alt="" class="bd-placeholder-img card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{book.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><b>Categoria:</b>{{book.category}}</li>
+    <li class="list-group-item"><b>Estoque:</b>{{book.quantity}}</li>
+    <li class="list-group-item"><b>valor:</b>{{book.price | currency : 'BRL'}}</li>
+  </ul>
+  <div class="card-body">
+    <button type="button" class="btn btn-sm btn-primary card-link">Comprar</button>
+    <button type="button" class="btn btn-sm btn-outline-primary card-link">Detalhes</button>
+  </div>
+</div>
